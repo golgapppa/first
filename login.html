@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      input{
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,22 +19,45 @@
         <div class="right">
           <ul>
             <div class="home border">
-                <li><a href="home.html">HOME</a></li>
-            </div>
-            <div class="game border">
-                <li><a href="game.html">GAME</a></li>
-            </div>
-            <div class="about border">
-                <li><a href="about.html">ABOUT</a></li>
-            </div>
-            <div class="contact border">
-                <li><a href="login.html">LOGIN</a></li>
-            </div>
+              <i class="fa-solid fa-house"></i>
+              <li><a href="#">HOME</a></li>
+          </div>
+          <div class="game border">
+              <i class="fa-solid fa-gamepad"></i>
+              <li><a href="#">GAME</a></li>
+          </div>
+          <div class="about border">
+              <i class="fa-solid fa-address-card"></i>
+              <li><a href="#">ABOUT</a></li>
+          </div>
+          <div class="contact border">
+              <i class="fa-solid fa-user-plus"></i>
+              <li><a href="login.html">LOGIN</a></li>
+          </div>
+
           </ul>
         </div>
       </div>
     </header>
-   <main>THIS IS LOGIN PAGE</main>
+   <main>
+        <div class="form">  <h3>REGISTER NEW</h3>
+      <form action="login.html">
+     <p class="name">
+      NAME : <input type="text" name="name" required>
+  </p> 
+      <legend>Gender</legend>
+       <p>
+          Male <input type="radio" name="gender" id="Male" required>
+          Female <input type="radio" name="gender" id="Female" required>
+      </p>
+  <p>Email: <input type="email"></p>
+  <p>Mobile: <input type="number" name="number" id="number" required></p>
+  <input type="submit"  value="submit">
+  </form>
+  </div>
+          </div>
+      
+    </main>
    <footer>
     <div class="copyright">
         
